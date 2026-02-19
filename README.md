@@ -5,7 +5,7 @@
 Welcome to my personal portfolio website repository.  
 
 This project represents my first step into building a professional online presence using HTML and CSS. The website introduces my background, technical skills, and programming projects. You can view the live website here:  
-🌐 [Live Demo](https://mhkn-2007.github.io/)  
+🌐 [Live Demo](https://mhkn-2007.github.io/mhkn-2207.github.io/)  
 
 ---
 
@@ -28,8 +28,6 @@ I am a junior backend developer passionate about building efficient and scalable
 
 - Git & GitHub  
 - VS Code  
-- Command Line  
-- GitHub Pages  
 
 ---
 
@@ -45,18 +43,6 @@ A Python project that interacts with book-related data and APIs.
 
 ---
 
-## 🌐 Portfolio Website
-
-This repository contains the source code of my personal portfolio website built using:
-
-- HTML5  
-- CSS3  
-
-The design is **dark-themed**, modern, and inspired by professional developer portfolio layouts.  
-
-🔗 [Live Demo](https://mhkn-2007.github.io/)  
-
----
 
 ## 📫 Contact
 
