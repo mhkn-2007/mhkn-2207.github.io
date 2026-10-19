@@ -31,6 +31,13 @@ nav{display:flex;align-items:center;justify-content:space-between;height:64px}
 section{padding:96px 0}
 .hero{min-height:calc(100vh - 64px);display:flex;align-items:center;padding:56px 0}
 .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.avatar{position:relative;width:128px;height:128px;margin-bottom:26px;isolation:isolate}
+.avatar::before,.avatar::after{content:"";position:absolute;border-radius:50%;background:conic-gradient(from 180deg,var(--a1),var(--a2),var(--a3),var(--a1));animation:ring 10s linear infinite}
+.avatar::before{inset:-4px;z-index:-1}
+.avatar::after{inset:-10px;z-index:-2;filter:blur(26px);opacity:.4}
+.avatar img,.avatar .ini{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover;border:5px solid var(--bg);background:var(--surface2)}
+.avatar .ini{display:grid;place-items:center;font-weight:800;font-size:2rem;letter-spacing:-.02em;color:var(--a1)}
+@keyframes ring{to{transform:rotate(360deg)}}
 .pill{display:inline-flex;align-items:center;gap:10px;padding:7px 14px;border:1px solid var(--line);background:var(--surface);border-radius:999px;font-size:.82rem;color:var(--muted)}
 .dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.2);animation:pulse 2s infinite}
 @keyframes pulse{50%{box-shadow:0 0 0 8px rgba(34,197,94,0)}}
@@ -102,5 +109,5 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
 .rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
 .rv.on{opacity:1;transform:none}
 @media (max-width:860px){.grid,.about,.skills,.projects{grid-template-columns:1fr}.skills .card,.skills .card:nth-child(n+4){grid-column:auto}.links a:not(.keep){display:none}.term{transform:none}section{padding:72px 0}.hero{min-height:auto}}
-@media (max-width:420px){.wrap{padding:0 18px}.links{gap:2px}.links a.keep{display:none}.lbtn{padding:0 11px}.card{padding:24px 20px}.cta{padding:48px 20px}.btn{padding:12px 20px}}
+@media (max-width:420px){.wrap{padding:0 18px}.avatar{width:108px;height:108px;margin-bottom:22px}.links{gap:2px}.links a.keep{display:none}.lbtn{padding:0 11px}.card{padding:24px 20px}.cta{padding:48px 20px}.btn{padding:12px 20px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
